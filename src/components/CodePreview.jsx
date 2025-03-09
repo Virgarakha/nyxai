@@ -13,19 +13,19 @@ const CodePreview = ({ code, language }) => {
   
   return (
     <div className="bg-gray-100 border-t border-gray-300">
-      <div className="flex justify-between items-center p-3 bg-dark-800 text-white">
+      <div className="flex  justify-between items-center p-3 text-black text-white">
         <div className="flex items-center space-x-2">
-          <span className="text-sm font-semibold">Preview</span>
-          <span className="text-xs px-2 py-1 bg-dark-700 rounded">{language}</span>
+          <span className="text-sm font-semibold text-black">Preview</span>
+          <span className="text-xs px-2 py-1 text-gray-500 bg-dark-700 rounded">{language}</span>
         </div>
         <button 
           onClick={closePreview}
-          className="text-gray-300 hover:text-white"
+          className="text-gray-500 hover:text-gray-400"
         >
           <HiX className="w-5 h-5" />
         </button>
       </div>
-      <div className="h-72 overflow-auto border-t border-dark-700">
+      <div className="h-[70vh] overflow-auto border-t border-gray-300">
         {language === 'html' ? (
           <div className="bg-white h-full w-full">
             <iframe
