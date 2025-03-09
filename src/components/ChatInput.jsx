@@ -28,8 +28,8 @@ const ChatInput = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Tanyakan sesuatu tentang coding..."
-          className="flex-1 py-3 px-4 bg-transparent focus:outline-none resize-none min-h-[52px] max-h-32"
+          placeholder="Hello World..."
+          className="flex-1 py-3 px-4 bg-transparent outline-none resize-none min-h-[52px] max-h-32"
           rows={Math.min(5, Math.max(1, input.split('\n').length))}
           disabled={loading}
         />
