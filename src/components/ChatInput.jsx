@@ -47,7 +47,7 @@ const ChatInput = () => {
             className={`ml-2 p-2 rounded-full ${
               !input.trim() || loading
                 ? 'bg-gray-200 text-gray-400'
-                : 'bg-primary-600 text-white hover:bg-primary-700'
+                : 'bg-primary-600 text-gray-500 hover:bg-primary-700'
             }`}
             title="Send message"
           >
